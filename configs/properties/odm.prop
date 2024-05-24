@@ -1,0 +1,21 @@
+# Audio
+vendor.audio.hdr.record.enable=false
+
+# Bluetooth
+bluetooth.device.default_name=REDMAGIC 9 Pro
+
+# Display
+persist.sys.sf.color_mode=0
+ro.surface_flinger.use_content_detection_for_refresh_rate=true
+ro.surface_flinger.set_display_power_timer_ms=1000
+ro.surface_flinger.set_touch_timer_ms=200
+ro.surface_flinger.set_idle_timer_ms=80
+
+# Sensors
+persist.vendor.sensors.enable.mag_filter=true
+
+# SPU
+vendor.gatekeeper.disable_spu=true
+
+# USB
+vendor.usb.product_string=REDMAGIC 9 Pro

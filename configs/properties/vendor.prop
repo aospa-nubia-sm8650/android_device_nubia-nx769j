@@ -1,0 +1,71 @@
+# Bluetooth
+persist.sys.fflag.override.settings_bluetooth_hearing_aid=true
+persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptiver2
+persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
+persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=true
+persist.vendor.qcom.bluetooth.aptxadaptiver2_1_support=true
+persist.vendor.qcom.bluetooth.aptxadaptiver2_2_support=true
+
+# Camera
+camera.disable_zsl_mode=1
+ro.camera.enableCamera1MaxZsl=1
+persist.vendor.camera.exif.model=REDMAGIC_9Pro
+ro.total.camera.number=4
+ro.vendor.camera.total.number=4
+ro.vendor.game.switch.enable=1
+
+# Fingerprint (to be done)
+ro.vendor.feature.fingerprint_sensorui_position_center_r=94
+ro.vendor.feature.fingerprint_sensorui_position_center_x=558
+ro.vendor.feature.fingerprint_sensorui_position_center_y=1858
+
+# LED (to be done, but i think this works?)
+ro.vendor.poweroff_breath_type=1
+ro.vendor.poweroff_outchannel=4864
+ro.vendor.poweroff_led_maxbright_dir=/sys/class/backlight/panel0-backlight/max_brightness
+ro.vendor.poweroff_led_brightness_dir=/sys/class/backlight/panel0-backlight/brightness
+ro.vendor.poweroff_breath_bright_dir=/sys/class/leds/nubia_led/grade_parameter
+ro.vendor.poweroff_breath_brightness=128
+ro.vendor.poweroff_breath_blink=/sys/class/leds/nubia_led/blink_mode
+ro.vendor.poweroff_store_log=/persist
+ro.vendor.poweroff_led_red_brightness=/sys/clas/leds/red/brightness
+ro.vendor.poweroff_led_green_brightness=/sys/clas/leds/green/brightness
+
+# Display
+ro.vendor.display.sensortype=2
+
+# DPM
+persist.vendor.dpm.vndr.feature=11
+persist.vendor.dpm.vndr.halservice.enable=1
+persist.vendor.dpm.vndr.idletimer.mode=default
+
+# DRM
+drm.service.enabled=true
+
+# FM
+vendor.hw.fm.init=0
+
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
+# Incremental FS
+ro.incremental.enable=yes
+
+# Keystore
+ro.hardware.keystore_desede=true
+
+# Media
+debug.stagefright.c2inputsurface=-1
+media.stagefright.enable-aac=true
+media.stagefright.enable-fma2dp=true
+media.stagefright.enable-http=true
+media.stagefright.enable-player=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-scan=true
+media.stagefright.thumbnail.prefer_hw_codecs=true
+ro.mediaserver.64b.enable=true
+vendor.media.omx=0
+
+# NFC
+
+# Telephony
