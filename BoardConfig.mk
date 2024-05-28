@@ -5,18 +5,16 @@
 #
 
 # Testing (>o<)
+ALLOW_MISSING_DEPENDENCIES := true
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 DEVICE_PATH := device/nubia/nx769j
-KERNEL_PREBUILT_DIR := device/nubia/nx769j-kernel
-TARGET_PREBUILT_KERNEL := true
 
 # A/B OTA
 AB_OTA_UPDATER := true
 
 AB_OTA_PARTITIONS += \
-    boot \
     dtbo \
     init_boot \
     odm \
@@ -25,18 +23,17 @@ AB_OTA_PARTITIONS += \
     system \
     system_dlkm \
     system_ext \
-    vbmeta \
-    vbmeta_system \
     vendor \
     vendor_boot \
     vendor_dlkm
 
 # SoC Arch (64bit only)
 TARGET_ARCH := arm64
-TARGET_ARCH_VARIANT := armv9-a
+TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 :=
-TARGET_CPU_VARIANT := cortex-a510
+TARGET_CPU_VARIANT := generic
+TARGET_CPU_VARIANT_RUNTIME := kryo300
 
 # Boot
 BOARD_BOOT_HEADER_VERSION := 4
@@ -71,23 +68,28 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_nx769j
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
     androidboot.memcg=1 \
-    androidboot.usbcontroller=a600000.dwc3
+    androidboot.usbcontroller=a600000.dwc3 \
+    androidboot.selinux=permissive \
+    console=/dev/ttyMSM0,115200n8 \
+    androidboot.load_modules_parallel=true
 
 BOARD_KERNEL_CMDLINE := \
     kasan=off \
     disable_dma32=on \
     mtdoops.fingerprint=$(AOSPA_VERSION) \
-    androidboot.selinux=permissive
+    androidboot.selinux=permissive \
+    console=/dev/ttyMSM0,115200n8
 
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
 TARGET_HAS_GENERIC_KERNEL_HEADERS := true
+KERNEL_PREBUILT_DIR := device/qcom/pineapple-kernel
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
 # OTA
-TARGET_OTA_ASSERT_DEVICE := nx769j
+TARGET_OTA_ASSERT_DEVICE := NX769J
 
 # Partition layout
 BOARD_BOOTIMG_PARTITION_SIZE := 100663296
@@ -169,6 +171,7 @@ BOARD_AVB_SYSTEM_DLKM_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
 BOARD_AVB_VENDOR_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
 BOARD_AVB_VENDOR_DLKM_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
 BOARD_AVB_ODM_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
+
 
 # VINTF
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \

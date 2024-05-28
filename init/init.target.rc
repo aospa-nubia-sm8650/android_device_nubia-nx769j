@@ -95,14 +95,29 @@ on late-fs
     #exec_start wait_for_keymaster
     mount_all /vendor/etc/fstab.qcom --late
 
+# Include logger service
+service logger /system/bin/logcat -b all -D -f /metadata/boot_log.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
 on post-fs-data
     mkdir /vendor/data/tombstones 0771 system system
     # Enable WLAN cold boot calibration
     write /sys/kernel/cnss/fs_ready 1
+    # Clear existing log and start the service
+    rm /metadata/boot_log.txt
+    start logger
+
+on property:sys.boot_completed=1
+    # Stop the logger service
+    stop logger
 
 on early-boot
     verity_update_state
-
+    
 on boot
     write /dev/cpuset/audio-app/cpus 0-1
     # Add a cpuset for the camera daemon

@@ -166,7 +166,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.health-service.qti \
     android.hardware.health@1.0 \
-    android.hardware.health@2.1
+    android.hardware.health@2.1 \
+    android.hardware.health-service.qti_recovery
 
 # Identity
 PRODUCT_PACKAGES += \
@@ -195,9 +196,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
-
-# Kernel Binary
-KERNEL_PREBUILT_DIR := device/nubia/nx769j-kernel
 
 # Keymaster
 PRODUCT_PACKAGES += \
