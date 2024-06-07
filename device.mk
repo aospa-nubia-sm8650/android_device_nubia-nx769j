@@ -294,6 +294,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libjson
 
+# Secure Element
+PRODUCT_PACKAGES += \
+    android.hardware.secure_element-V1-ndk.vendor
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1-service-multihal \
