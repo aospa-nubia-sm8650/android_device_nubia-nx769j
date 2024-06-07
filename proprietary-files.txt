@@ -220,6 +220,7 @@ vendor/lib64/vendor.qti.hardware.automotive.vehicle@1.0.so
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.1-service-qti
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
+vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-qti.so
 vendor/etc/init/android.hardware.bluetooth@1.1-service-qti.rc
 vendor/lib64/hw/vendor.qti.hardware.bttpi-impl.so
 vendor/lib64/libqti_vndfwk_detect_vendor.so
@@ -1181,8 +1182,6 @@ vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
 # Face
-vendor/bin/hw/android.hardware.biometrics.face@1.0-service.face
-vendor/etc/init/android.hardware.biometrics.face@1.0-service.face.rc
 vendor/lib64/libcamera2ndk_vendor.so
 vendor/lib64/vendor.qti.hardware.secureprocessor.common-V1-ndk.so
 vendor/lib64/vendor.qti.hardware.secureprocessor.common-helper.so
