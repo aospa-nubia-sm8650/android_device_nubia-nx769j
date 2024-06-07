@@ -108,7 +108,6 @@ vendor/lib64/rfs/dsp/libvpt_action_recognition.so
 vendor/lib64/rfs/dsp/libworker_pool.so
 
 # Alarm
-system_ext/app/PowerOffAlarm/PowerOffAlarm.apk
 system_ext/lib64/vendor.qti.hardware.alarm@1.0.so
 vendor/bin/hw/vendor.qti.hardware.alarm-service
 vendor/bin/power_off_alarm
@@ -220,6 +219,7 @@ vendor/lib64/vendor.qti.hardware.automotive.vehicle@1.0.so
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.1-service-qti
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/etc/init/android.hardware.bluetooth@1.1-service-qti.rc
 vendor/lib64/hw/vendor.qti.hardware.bttpi-impl.so
 vendor/lib64/libqti_vndfwk_detect_vendor.so
@@ -1300,7 +1300,6 @@ vendor/lib64/liboffloadhal.so
 # IR
 vendor/bin/hw/android.hardware.ir-service
 vendor/etc/init/android.hardware.ir-service.rc
-vendor/etc/vintf/manifest/android.hardware.ir-service.xml
 vendor/lib64/hw/consumerir.zte.so
 
 # Keymaster
@@ -1415,7 +1414,6 @@ vendor/etc/perf/targetresourceconfigs.xml
 vendor/etc/perf/targetsysnodesconfigs.xml
 vendor/etc/perf/testcommonresourceconfigs.xml
 vendor/etc/perf/testtargetresourceconfigs.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.perf2.xml
 vendor/etc/powerhint.xml
 vendor/lib64/libperfconfig.so
 vendor/lib64/libperfgluelayer.so
@@ -1487,7 +1485,6 @@ system_ext/lib64/vendor.qti.qspmhal@1.0.so
 vendor/bin/vendor.qti.qspmhal-service
 vendor/etc/init/vendor.qti.qspmhal-service.rc
 vendor/etc/seccomp_policy/qspm.policy
-vendor/etc/vintf/manifest/vendor.qti.qspmhal-service.xml
 vendor/lib64/libqspm-mem-utils-vendor.so
 vendor/lib64/vendor.qti.qspmhal-V1-ndk.so
 vendor/lib64/vendor.qti.qspmhal-impl.so
@@ -1512,7 +1509,6 @@ vendor/etc/vintf/manifest/vendor.qti.hardware.qxr-service.xml
 vendor/lib64/vendor.qti.hardware.qxr-V1-ndk.so
 
 # Radio
-system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/lib64/vendor.qti.hardware.embmssl@1.0.so
 system_ext/lib64/vendor.qti.hardware.embmssl@1.1.so
 system_ext/lib64/vendor.qti.hardware.embmsslaidl-V1-ndk.so
@@ -1539,7 +1535,6 @@ system_ext/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so
 system_ext/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so
 system_ext/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so
 system_ext/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
-system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/app/IWlanService/IWlanService.apk
 vendor/bin/hw/qcrilNrd
 vendor/bin/ATFWD-daemon
@@ -1736,7 +1731,6 @@ system_ext/lib64/vendor.qti.ims.rcsuce@1.1.so
 system_ext/lib64/vendor.qti.ims.rcsuce@1.2.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
-system_ext/priv-app/ims/ims.apk
 vendor/bin/ims_rtp_daemon
 vendor/etc/init/ims_rtp_daemon.rc
 vendor/etc/seccomp_policy/imsrtp.policy
@@ -1911,7 +1905,6 @@ vendor/bin/hw/vendor.qti.hardware.servicetrackeraidl-service
 vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc
 vendor/etc/init/vendor.qti.hardware.servicetrackeraidl-service.rc
 vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml
-vendor/etc/vintf/manifest/vendor.qti.hardware.servicetrackeraidl-service.xml
 vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
 vendor/lib64/hw/vendor.qti.hardware.servicetrackeraidl-impl.so
 vendor/lib64/vendor.qti.hardware.servicetracker@1.0.so
@@ -2072,7 +2065,6 @@ system_ext/lib64/libwfduibcsrcinterface.so
 system_ext/lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so
 system_ext/lib64/vendor.qti.hardware.sigma_miracast@1.0.so
 system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
-system_ext/priv-app/WfdService/WfdService.apk
 vendor/bin/wfdhdcphalservice
 vendor/bin/wfdvndservice
 vendor/bin/wifidisplayhalservice
@@ -2126,7 +2118,6 @@ vendor/bin/hw/capabilityconfigstoretest
 vendor/bin/hw/pasrknob
 vendor/bin/hw/sxrservice
 vendor/bin/hw/vendor.hardware.media.c2@1.0-dtscodec-service
-vendor/bin/hw/vendor.hardware.zte.wifi@1.0-service
 vendor/bin/hw/vendor.qti.hardware.display.demura-service
 vendor/bin/hw/vendor.qti.hardware.lights.service
 vendor/bin/hw/vendor.qti.hardware.memtrack-service
@@ -2426,7 +2417,6 @@ vendor/etc/init/touchscreen_zte.rc
 vendor/etc/init/trusteduilistener.rc
 vendor/etc/init/vendor.dpmd.rc
 vendor/etc/init/vendor.hardware.media.c2@1.0-dtscodec-service.rc
-vendor/etc/init/vendor.hardware.zte.wifi@1.0-service.rc
 vendor/etc/init/vendor.qsap.location.rc
 vendor/etc/init/vendor.qsap.qapeservice.rc
 vendor/etc/init/vendor.qsap.sensors.rc
@@ -2509,7 +2499,6 @@ vendor/etc/vintf/manifest/manifest_non_qmaa.xml
 vendor/etc/vintf/manifest/manifest_non_qmaa_extn.xml
 vendor/etc/vintf/manifest/memtrack_qti.xml
 vendor/etc/vintf/manifest/mwqem-saidl.xml
-vendor/etc/vintf/manifest/nfc-service-aidl.xml
 vendor/etc/vintf/manifest/power.xml
 vendor/etc/vintf/manifest/qcrilhook-saidl.xml
 vendor/etc/vintf/manifest/qesdk-manager.xml
@@ -3117,7 +3106,6 @@ vendor/lib64/libwqe.so
 vendor/lib64/libwvaidl.so
 vendor/lib64/libzte_variantflag_shared_vendor.so
 vendor/lib64/qcril_client.so
-vendor/lib64/vendor.hardware.zte.wifi@1.0.so
 vendor/lib64/vendor.libdpmctmgr.so
 vendor/lib64/vendor.libdpmfdmgr.so
 vendor/lib64/vendor.libdpmframework.so
