@@ -282,9 +282,9 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.modem-V2-ndk.vendor \
     android.hardware.radio.network-V2-ndk.vendor \
     android.hardware.radio.voice-V2-ndk.vendor \
-    android.hardware.radio.ims-V1-ndk-vendor \
-    android.hardware.radio.ims.media-V1-ndk-vendor \
-    android.hardware.radio.sap-V1-ndk-vendor
+    android.hardware.radio.ims-V1-ndk.vendor \
+    android.hardware.radio.ims.media-V1-ndk.vendor \
+    android.hardware.radio.sap-V1-ndk.vendor
 
 # Powershare
 PRODUCT_PACKAGES += \
