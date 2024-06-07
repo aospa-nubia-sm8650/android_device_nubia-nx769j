@@ -2122,7 +2122,6 @@ vendor/bin/hw/vendor.qti.hardware.lights.service
 vendor/bin/hw/vendor.qti.hardware.memtrack-service
 vendor/bin/hw/vendor.qti.hardware.spu-service
 vendor/bin/hw/vendor.qti.psiclient@1.0-service
-vendor/bin/hw/vendor.zte.fingerprint.ifaahidl@1.0-service
 vendor/bin/qmi-framework-tests/qmi_test_mt_client_init_instance
 vendor/bin/AnchorTest
 vendor/bin/GPTEE_Sample_client
@@ -2428,7 +2427,6 @@ vendor/etc/init/vendor.qti.qspa-service.rc
 vendor/etc/init/vendor.qti.smp2p.rc
 vendor/etc/init/vendor.sensors.qti.rc
 vendor/etc/init/vendor.sensors.sscrpcd.rc
-vendor/etc/init/vendor.zte.fingerprint.ifaahidl@1.0-service.rc
 vendor/etc/init/vendorapdpswitch.rc
 vendor/etc/init/vmmgr.rc
 vendor/etc/init/vndservicemanager.rc
@@ -3112,7 +3110,6 @@ vendor/lib64/vendor.libdpmtcm.so
 vendor/lib64/vendor.libmwqemiptablemgr.so
 vendor/lib64/vendor.qti.hardware.qspa-V1-ndk.so
 vendor/lib64/vendor.qti.hardware.spu-V2-ndk.so
-vendor/lib64/vendor.zte.fingerprint.ifaahidl@1.0.so
 vendor/lib64/vendor.zte.modem@1.0.so
 vendor/lib64/vendor.zte.subsys@1.0.so
 vendor/lib64/vendor.zte.subsys@2.0.so
