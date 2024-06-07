@@ -21,4 +21,12 @@
             <instance>vendor_zte/0</instance>
         </interface>
     </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.zte.fingerprint.ifaahidl</name>
+        <version>1.0</version>
+        <interface>
+            <name>IIfaaDaemon</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>
