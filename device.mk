@@ -103,13 +103,16 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl-qti \
     android.hardware.boot@1.2-impl-qti.recovery \
-    android.hardware.boot@1.2-service
+    android.hardware.boot@1.2-service \
+    android.hardware.boot-V1-ndk.vendor
 
+# Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.common-V1-ndk.vendor \
     android.hardware.camera.device-V1-ndk.vendor \
     android.hardware.camera.metadata-V1-ndk.vendor \
     android.hardware.camera.provider-V1-ndk.vendor \
+    android.hardware.camera.provider-V2-ndk.vendor \
     android.hardware.camera.provider@2.4-external \
     android.hardware.camera.provider@2.4-legacy \
     android.hardware.camera.provider@2.7.vendor \
@@ -162,6 +165,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
 
+# GNSS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss-V3-ndk.vendor
+
+# Graphics
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator-V1-ndk.vendor
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.qti \
@@ -171,7 +182,7 @@ PRODUCT_PACKAGES += \
 
 # Identity
 PRODUCT_PACKAGES += \
-    android.hardware.identity-V4-ndk.vendor
+    android.hardware.identity-V5-ndk.vendor
 
 # Init
 PRODUCT_PACKAGES += \
@@ -206,6 +217,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.hardware_keystore.xml \
     android.hardware.security.keymint-V2-ndk.vendor \
+    android.hardware.security.keymint-V3-ndk.vendor \
     android.hardware.security.rkp-V3-ndk.vendor \
     android.hardware.security.secureclock-V1-ndk.vendor \
     android.hardware.security.sharedsecret-V1-ndk.vendor
@@ -231,12 +243,19 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
 
+# Netd 
+PRODUCT_PACKGES += \
+    android.system.net.netd-V1-ndk.vendor
+
 # Neural Networks
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks-V1-ndk.vendor
 
 # NFC
 $(call inherit-product, vendor/nxp/opensource/commonsys/packages/apps/Nfc/nfc_system_product.mk)
+
+PRODUCT_PACKAGES += \
+    android.hardware.nfc-V1-ndk.vendor
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.ese.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.ese.xml \
@@ -252,6 +271,13 @@ PRODUCT_COPY_FILES += \
 # RenderScript
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
+
+# RIL
+PRODUCT_PACKAGES += \
+    android.hardware.radio.config-V2-ndk.vendor \
+    android.hardware.radio.sim-V2-ndk.vendor \
+    android.hardware.radio.messaging-V2-ndk.vendor \
+    android.hardware.radio.modem-V2-ndk.vendor
 
 # Powershare
 PRODUCT_PACKAGES += \
@@ -301,6 +327,10 @@ PRODUCT_PACKAGES += \
     update_engine \
     update_engine_sideload \
     update_verifier
+
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb-V1-ndk.vendor
 
 # Verified Boot
 PRODUCT_COPY_FILES += \
