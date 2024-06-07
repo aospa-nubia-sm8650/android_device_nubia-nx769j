@@ -276,9 +276,12 @@ PRODUCT_PACKAGES += \
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio.config-V2-ndk.vendor \
+    android.hardware.radio.data-V2-ndk \
     android.hardware.radio.sim-V2-ndk.vendor \
     android.hardware.radio.messaging-V2-ndk.vendor \
-    android.hardware.radio.modem-V2-ndk.vendor
+    android.hardware.radio.modem-V2-ndk.vendor \
+    android.hardware.radio.network-V2-ndk.vendor \
+    android.hardware.radio.voice-V2-ndk.vendor
 
 # Powershare
 PRODUCT_PACKAGES += \
