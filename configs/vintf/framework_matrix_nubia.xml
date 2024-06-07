@@ -6,4 +6,19 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.zte.radio</name>   
+        <interface> 
+            <name>IVendorRadio</name>
+            <instance>slot1</instance> 
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.zte.hardware.camera.transfer</name>
+        <interface> 
+            <name>ITransfer</name>
+            <instance>vendor_zte/0</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>
