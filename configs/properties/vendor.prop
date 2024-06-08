@@ -48,6 +48,9 @@ vendor.hw.fm.init=0
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
+# Gatekeeper
+vendor.gatekeeper.is_security_level_spu=0
+
 # Incremental FS
 ro.incremental.enable=yes
 
