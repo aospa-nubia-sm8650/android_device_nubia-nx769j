@@ -1613,6 +1613,9 @@ vendor/lib64/libsensorslog.so
 vendor/lib64/libsns_direct_channel_stub.so
 vendor/lib64/libsnsapi.so
 vendor/lib64/libsnsutils.so
+vendor/lib64/libspcom.so
+vendor/bin/poweropt-service
+
 
 # PD
 vendor/bin/pd-mapper
