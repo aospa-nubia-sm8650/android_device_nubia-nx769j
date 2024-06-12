@@ -145,8 +145,6 @@ vendor/lib64/hw/vendor.qti.hardware.alarm-impl.so
 vendor/lib64/vendor.qti.hardware.alarm-V1-ndk.so
 
 # Audio
-vendor/bin/hw/android.hardware.audio.service_64
-vendor/etc/init/android.hardware.audio.service_64.rc
 vendor/etc/models/acd/event.eai
 vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
@@ -161,8 +159,6 @@ vendor/lib64/hw/android.hardware.audio@5.0-impl.so
 vendor/lib64/hw/android.hardware.audio@6.0-impl.so
 vendor/lib64/hw/android.hardware.audio@7.0-impl.so
 vendor/lib64/hw/android.hardware.audio@7.1-impl.so
-vendor/lib64/hw/audio.primary.default.so
-vendor/lib64/hw/audio.primary.pineapple.so
 vendor/lib64/hw/audio.r_submix.default.so
 vendor/lib64/hw/audio.usb.default.so
 vendor/lib64/libAlacSwDec.so
@@ -1388,17 +1384,20 @@ vendor/lib64/vendor.qti.gnss-service.so
 vendor/etc/gpsInterval.xml
 
 # Gatekeeper
+vendor/bin/hw/android.hardware.gatekeeper-service-qti
 vendor/bin/hw/android.hardware.gatekeeper-service-spu-qti
 vendor/bin/hw/vendor.qti.hardware.secureprocessor
 vendor/bin/hw/vendor.qti.hardware.secureprocessor@1.0
 vendor/bin/hw/vendor.qti.spu@1.1-service
 vendor/bin/hw/vendor.qti.spu@2.0-service
+vendor/etc/init/android.hardware.gatekeeper-service-qti.rc
 vendor/etc/init/android.hardware.gatekeeper-service-spu-qti.rc
 vendor/etc/init/init.vendor.qti.spu@1.1-service.rc
 vendor/etc/init/vendor.qti.hardware.secureprocessor.rc
 vendor/etc/init/vendor.qti.hardware.secureprocessor@1.0.rc
 vendor/etc/vintf/manifest/vendor.qti.hardware.secureprocessor.xml
 vendor/lib64/libspukeymintdeviceutils.so
+vendor/lib64/hw/libqtigatekeeper.so
 vendor/lib64/vendor.qti.hardware.secureprocessor.common@1.0-helper.so
 vendor/lib64/vendor.qti.hardware.secureprocessor.common@1.0.so
 vendor/lib64/vendor.qti.hardware.secureprocessor.config@1.0.so
@@ -1478,6 +1477,23 @@ vendor/lib64/libqtiidentitycredential.so
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
+vendor/bin/hw/android.hardware.security.keymint-service-qti
+vendor/etc/init/android.hardware.security.keymint-service-qti.rc
+vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti.xml
+vendor/lib64/libkeymasterdeviceutils.so
+vendor/lib64/libkeymasterprovision.so
+vendor/lib64/libkeymasterutils.so
+vendor/lib64/libqtikeymaster4.so
+vendor/lib64/libqtikeymint.so
+vendor/lib64/libspcom.so
+
+# Kernel
+vendor/bin/init.kernel.post_boot-pineapple.sh
+vendor/bin/init.kernel.post_boot.sh
+vendor/bin/init.qti.kernel.sh
+vendor/bin/system_dlkm_modprobe.sh
+vendor/bin/vendor_modprobe.sh
+vendor/etc/init/hw/init.qti.kernel.rc
 
 # Limits
 vendor/bin/hw/vendor.qti.hardware.limits@1.2-service
@@ -1615,7 +1631,7 @@ vendor/lib64/libsnsapi.so
 vendor/lib64/libsnsutils.so
 vendor/lib64/libspcom.so
 vendor/bin/poweropt-service
-
+vendor/lib64/libgamepoweroptfeature.so
 
 # PD
 vendor/bin/pd-mapper
