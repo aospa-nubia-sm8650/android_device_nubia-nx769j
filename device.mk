@@ -92,7 +92,8 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth.audio-V2-ndk.vendor
+    android.hardware.bluetooth.audio-V2-ndk.vendor \
+    android.hardware.audio.service_64
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pineapple/audio_effects.xml \
@@ -163,7 +164,9 @@ PRODUCT_COPY_FILES += \
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0.vendor
+    android.hardware.gatekeeper@1.0.vendor \
+    android.hardware.gatekeeper-V1-ndk.vendor \
+    liblog.vendor
 
 # GNSS
 PRODUCT_PACKAGES += \
@@ -297,6 +300,10 @@ PRODUCT_PACKAGES += \
 # Secure Element
 PRODUCT_PACKAGES += \
     android.hardware.secure_element-V1-ndk.vendor
+
+# ServiceTracker
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.servicetrackeraidl-V1-ndk.vendor
 
 # Sensors
 PRODUCT_PACKAGES += \
