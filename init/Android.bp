@@ -5,12 +5,6 @@
 //
 
 prebuilt_etc {
-    name: "fstab.qcom",
-    src: "fstab.qcom",
-    vendor: true,
-}
-
-prebuilt_etc {
     name: "init.fingerprint.gf95xx.rc",
     src: "init.fingerprint.gf95xx.rc",
     sub_dir: "init/hw",
