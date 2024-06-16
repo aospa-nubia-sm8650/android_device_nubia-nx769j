@@ -1,0 +1,25 @@
+//
+// Copyright (C) 2024 Paranoid Android
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library_static {
+    name: "libfingerprintengine_nx769j",
+    vendor: true,
+    srcs: ["FingerprintEngine.cpp"],
+    shared_libs: [
+        "libbase",
+        "libbinder_ndk",
+        "libcutils",
+        "libhardware",
+        "liblog",
+        "android.hardware.biometrics.fingerprint-V3-ndk",
+        "android.hardware.biometrics.common-V3-ndk",
+        "android.hardware.biometrics.common.util",
+    ],
+    header_libs: [
+        "//hardware/nubia:nubiafingerprintengine_headers",
+    ],
+    include_dirs: [ "hardware/nubia/"],
+}

@@ -9,6 +9,12 @@ include device/nubia/sm8650-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/nubia/nx769j
 
+# Biometrics
+
+SOONG_CONFIG_NAMESPACES += nubia_fingerprint
+SOONG_CONFIG_nubia_fingerprint += fingerprint_engine
+SOONG_CONFIG_nubia_fingerprint_fingerprint_engine := //$(DEVICE_PATH):libfingerprintengine_nx769j
+
 # DPI
 TARGET_SCREEN_DENSITY := 480
 
