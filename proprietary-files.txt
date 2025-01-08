@@ -1,4 +1,4 @@
-# Unpinned blobs from GEN_NEEA_NX769JV1BV1.0.0B13MR1_SD_WO_ERA
+# Unpinned blobs from REDMAGICOS9.5.14_NEEA
 
 # ACDB
 vendor/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb
@@ -1153,7 +1153,6 @@ vendor/etc/vintf/manifest/vendor.qti.hardware.display.allocator-service.xml
 vendor/etc/vintf/manifest/vendor.qti.hardware.display.composer-service.xml
 vendor/etc/vintf/manifest/vendor.qti.hardware.display.demura-service.xml
 vendor/lib64/hw/gralloc.default.so
-vendor/lib64/libEGL_adreno.so
 vendor/lib64/libdisplayconfig.qti.so
 vendor/lib64/libdisplaydebug.so
 vendor/lib64/libgpu_tonemapper.so
@@ -1299,10 +1298,7 @@ vendor/lib64/vendor.qti.hardware.secureprocessor.device-V1-ndk.so
 
 # Fingerprint
 vendor/app/QFingerprintService/QFingerprintService.apk
-vendor/bin/hw/android.hardware.biometrics.fingerprint.aidl-service
-vendor/etc/init/fingerprint-example.rc
 vendor/etc/init/init.fingerprint.alipay.rc
-vendor/etc/vintf/manifest/fingerprint-example.xml
 vendor/lib64/hw/fingerprint.gf95xx.default.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint.so
@@ -2295,11 +2291,6 @@ vendor/lib64/libwfdaac_vendor.so
 # Wi-Fi configs
 etc/wifi/wifi_config.xml
 
-# Wi-Fi firmware
-vendor/firmware/wlan/qca_cld/kiwi_v2/WCNSS_qcom_cfg.ini
-vendor/firmware/wlan/qca_cld/kiwi_v2/wifimac.dat
-vendor/firmware/wlan/qca_cld/kiwi_v2/wlan_mac.bin
-
 # WiFi
 vendor/etc/wifi/kiwi_v2/WCNSS_qcom_cfg.ini
 vendor/etc/wifi/p2p_supplicant_overlay.conf
@@ -2357,7 +2348,6 @@ vendor/etc/wifi/wpa_supplicant.conf
 # Miscellaneous
 odm/etc/aac_richtap.config
 odm/etc/ueventd.rc
-vendor/app/CneApp/lib/arm64/libvndfwk_detect_jni.qti_vendor.so
 vendor/app/TrustedUIService/TrustedUIService.apk
 vendor/app/TxPwrAdmin/TxPwrAdmin.apk
 vendor/app/com.qualcomm.qti.gpudrivers.pineapple.api34/com.qualcomm.qti.gpudrivers.pineapple.api34.apk
@@ -2402,7 +2392,6 @@ vendor/bin/fmconfig
 vendor/bin/fmfactorytest
 vendor/bin/fmfactorytestserver
 vendor/bin/ftmdaemon
-vendor/bin/getmprop
 vendor/bin/gpu_counter_producer
 vendor/bin/hdcp1prov
 vendor/bin/hdcp2p2prov
@@ -2428,7 +2417,6 @@ vendor/bin/qttestclient
 vendor/bin/qttestservice
 vendor/bin/rkp_factory_extraction_tool
 vendor/bin/rpmbClient
-vendor/bin/setmprop
 vendor/bin/sg_write_buffer
 vendor/bin/sigma_dut
 vendor/bin/smcinvoke_example
@@ -2723,8 +2711,6 @@ vendor/firmware/touch_game0.bin
 vendor/firmware/touch_game1.bin
 vendor/firmware/touch_game2.bin
 vendor/firmware/vpu33_4v.mbn.back
-vendor/firmware/wlanmdsp.otaupdate
-vendor/lib/modules
 vendor/lib64/bm4a68v08s12n52.bin
 vendor/lib64/bm4a68v08s12n53.bin
 vendor/lib64/bm4a73v08s12n02.bin
@@ -2780,7 +2766,6 @@ vendor/lib64/drm-vts-test-libs/libvtswidevine.so
 vendor/lib64/ftm_fm_lib.so
 vendor/lib64/lib-framework.so
 vendor/lib64/libCneAppJni.so
-vendor/lib64/libGLESv2_adreno.so
 vendor/lib64/libNubiaImageAlgorithmVD.so
 vendor/lib64/libOpenCL_adreno.so
 vendor/lib64/libTxPwrJni.so
@@ -2820,7 +2805,6 @@ vendor/lib64/libomp.so
 vendor/lib64/libopenshort.so
 vendor/lib64/libpolygon.so
 vendor/lib64/libpsi.so
-vendor/lib64/libq3dtools_adreno.so
 vendor/lib64/libqms.so
 vendor/lib64/libqsh_ble_pb.so
 vendor/lib64/libqsh_wifi_test.so
