@@ -145,6 +145,8 @@ vendor/lib64/hw/vendor.qti.hardware.alarm-impl.so
 vendor/lib64/vendor.qti.hardware.alarm-V1-ndk.so
 
 # Audio
+vendor/bin/hw/android.hardware.audio.service_64
+vendor/etc/init/android.hardware.audio.service_64.rc
 vendor/etc/models/acd/event.eai
 vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
@@ -159,6 +161,8 @@ vendor/lib64/hw/android.hardware.audio@5.0-impl.so
 vendor/lib64/hw/android.hardware.audio@6.0-impl.so
 vendor/lib64/hw/android.hardware.audio@7.0-impl.so
 vendor/lib64/hw/android.hardware.audio@7.1-impl.so
+vendor/lib64/hw/audio.primary.default.so
+vendor/lib64/hw/audio.primary.pineapple.so
 vendor/lib64/hw/audio.r_submix.default.so
 vendor/lib64/hw/audio.usb.default.so
 vendor/lib64/libAlacSwDec.so
@@ -1155,6 +1159,7 @@ vendor/etc/vintf/manifest/vendor.qti.hardware.display.demura-service.xml
 vendor/lib64/hw/gralloc.default.so
 vendor/lib64/libdisplayconfig.qti.so
 vendor/lib64/libdisplaydebug.so
+vendor/lib64/libdisplayqos.so
 vendor/lib64/libgpu_tonemapper.so
 vendor/lib64/libin_display.so
 vendor/lib64/libqservice.so
@@ -1205,8 +1210,12 @@ vendor/bin/hw/vendor.qti.hardware.display.composer-service
 vendor/etc/snapdragon_color_libs_config.xml
 vendor/lib64/libhistogram.so
 vendor/lib64/libqdutils.so
+vendor/lib64/libsdm-color.so
+vendor/lib64/libsdm-colormgr-algo.so
+vendor/lib64/libsdm-disp-vndapis.so
 vendor/lib64/libsdmcore.so
 vendor/lib64/libsdmdal.so
+vendor/lib64/libsdmextension.so
 vendor/lib64/libsdmutils.so
 vendor/lib64/libvmmem.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
@@ -1332,6 +1341,7 @@ vendor/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy
 vendor/etc/vintf/manifest/android.hardware.gnss-aidl-service-qti.xml
 vendor/etc/vintf/manifest/vendor.qti.gnss-service.xml
 vendor/etc/xtwifi.conf
+vendor/lib64/hw/android.hardware.gnss-aidl-impl-qti.so
 vendor/lib64/libbatching.so
 vendor/lib64/libcdfw.so
 vendor/lib64/libcdfw_remote_api.so
@@ -1713,6 +1723,7 @@ vendor/etc/init/qmipriod.rc
 vendor/etc/seccomp_policy/qti-systemd.policy
 vendor/lib64/libidl.so
 vendor/lib64/libmdmdetect.so
+vendor/lib64/libmemutils.so
 vendor/lib64/libqcci_legacy.so
 vendor/lib64/libqmi.so
 vendor/lib64/libqmi_cci.so
@@ -1726,6 +1737,7 @@ vendor/lib64/libqmi_legacy.so
 vendor/lib64/libqmiextservices.so
 vendor/lib64/libqmiservices.so
 vendor/lib64/libqrtr.so
+vendor/lib64/libqrtrclient.so
 vendor/lib64/libqsocket.so
 vendor/lib64/libsmemlog.so
 vendor/lib64/libsubsystem_control.so
